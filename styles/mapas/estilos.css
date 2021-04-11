@@ -1,0 +1,14 @@
+.banner{
+    width:700px;
+    height: 300px;
+    border: 3 solid red;
+    margin: auto;
+    
+    background-image: url(imgs/2012-16-Among-Us-Nintendo-Switch-the-Airship-01);
+    
+    background-size: 100% 100%;
+    
+    animation-name: banner;
+    animation-duration: 10s
+    
+}

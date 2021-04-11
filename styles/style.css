@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+}
+
+html {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    user-select: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 10%;
+    background-color: #171212;;
+}
+
+.current-time {
+    position: relative;
+    width: 100%;
+}
+
+.current-time #p1 {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #edf0f1;
+}
+
+.current-date {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #edf0f1;
+}
+
+#countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    color: #edf0f1;
+    position: relative;
+}
+
+#countdown-timer h2 {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 900;
+    margin: 30px 0px;
+}
+
+.countdown {
+    padding: 12px;
+    font-size: 36px;
+}
+
+#site-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 10%;
+    background: #fff;
+    padding: 70px;
+    margin-bottom: 0;
+}
+
+#site-info p {
+    width: 15%;
+    margin: 0 auto;
+}
+
+#site-info i {
+    margin-left: 15px;
+}
+
+.logo {
+    cursor: pointer;
+    color: #edf0f1;
+    font-weight: 400;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3 ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #edf0f1;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #171212;;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+button:hover {
+    background-color: #171212;
+}
+
+/* AMONG US HTML */
+
+#among-us {
+    position: relative;
+}
+
+#among-us h2 {
+    position: absolute;
+    top: 100px;
+    left: 5%;
+    transform: translateX(-5%);
+    width: 50%;
+    color: #171212;
+}
+
+#among-us p {
+    position: absolute;
+    top: 160px;
+    left: 5%;
+    transform: translateX(-9%);
+    width: 25%;
+}
+
+#among-us span {
+    color: #90ee90;
+    text-decoration: underline;
+}
+
+.download-box a {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%,-85%);
+    background: #171212;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-size: 19px;
+    transition: all 300ms ease;
+}
+
+.download-box a:hover {
+    color: #b91c1c;
+    background: #fff;
+    transition: all 300ms ease-in-out;
+}
+
+.avatar {
+    width: 150px;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%,-57%);
+}
+
+@media only screen and (max-width: 768px) {
+
+    #site-info {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #site-info p {
+        width: 80%;
+        margin-top: 35px;
+        text-align: center;
+    }
+}

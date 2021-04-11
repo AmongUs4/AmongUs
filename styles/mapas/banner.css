@@ -1,0 +1,8 @@
+.banner{
+    width:700px;
+    height: 300px;
+    border: 3 solid red;
+    margin: auto;
+    
+    background-image: url(imgs/archivo.png)
+}
